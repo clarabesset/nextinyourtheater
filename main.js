@@ -9,7 +9,6 @@ function insertContent(turn) {
   .then (
     function(response) {
     response.json().then(function(data) {
-      console.log(data.results.title)
       slideMax = data.results.length;
       let thisMoviePicture= data.results[turn].backdrop_path;
       let thisMoviePoster= data.results[turn].poster_path;
